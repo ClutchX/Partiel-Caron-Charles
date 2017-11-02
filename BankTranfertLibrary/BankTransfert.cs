@@ -1,7 +1,6 @@
 ﻿using BankTranfertLibrary.Interfaces;
 using System;
 using System.Collections.Generic;
-using System.IO;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -10,6 +9,7 @@ namespace BankTranfertLibrary
     public class BankTransfert
     {
         ILogger log = new Logger();
+        IWritter writter = new MyWritter();
 
         public bool Transfert(uint transactionId, decimal amount, string fromBankIban, string toBankIban)
         {
@@ -27,24 +27,33 @@ namespace BankTranfertLibrary
                 throw new InvalidOperationException();
             }
 
-            //write csv
-            var csv = new StringBuilder();
-            // chemin : BankTranfertLibrary\BankTransfertLibraryTest\bin\Debug\netcoreapp2.0
-            var csvTitle = $"transaction_{DateTime.Now.ToString("dd_MM_yy")}.csv";
-
-            if (!File.Exists(csvTitle))
+            try
             {
-                using (StreamWriter sw = File.CreateText(csvTitle))
-                {
-                    sw.WriteLine("Transaction;Amount;From;To");
-                }
+                writter.WriteToCsv(transactionId, amount, fromBankIban, toBankIban);
             }
-
-            var line = $"{transactionId};{amount};{fromBankIban};{toBankIban}";
-            using (StreamWriter sw = File.AppendText(csvTitle))
+            catch (ArgumentException)
             {
-                sw.WriteLine(line);
+                throw new ArgumentException("Arguments for writter are not valid.");
             }
+            
+            ////write csv
+            //var csv = new StringBuilder();
+            //// chemin : BankTranfertLibrary\BankTransfertLibraryTest\bin\Debug\netcoreapp2.0
+            //var csvTitle = $"transaction_{DateTime.Now.ToString("dd_MM_yy")}.csv";
+
+            //if (!File.Exists(csvTitle))
+            //{
+            //    using (StreamWriter sw = File.CreateText(csvTitle))
+            //    {
+            //        sw.WriteLine("Transaction;Amount;From;To");
+            //    }
+            //}
+
+            //var line = $"{transactionId};{amount};{fromBankIban};{toBankIban}";
+            //using (StreamWriter sw = File.AppendText(csvTitle))
+            //{
+            //    sw.WriteLine(line);
+            //}
 
 
             return true;

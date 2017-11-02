@@ -18,6 +18,4 @@ namespace BankTranfertLibrary
             Console.WriteLine($"{severity.ToString()} - {message}");
         }
     }
-
-    
 }
