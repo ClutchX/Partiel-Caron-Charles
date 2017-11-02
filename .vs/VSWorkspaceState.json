@@ -1,6 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\BankTranfertLibrary",
+    "\\BankTransfertLibraryTest"
   ],
+  "SelectedNode": "\\BankTranfertLibrary.sln",
   "PreviewInSolutionExplorer": false
 }
