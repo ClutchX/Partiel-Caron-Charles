@@ -1,8 +1,0 @@
-C:\Users\i325551\Documents\CampusID\Partiels\2-11-2017\Tests\BankTransfert\BankTranfertLibrary\.vs\BankTranfertLibrary\lut\0\b\BankTranfertLibrary\Debug\netcoreapp2.0\BankTranfertLibrary.deps.json
-C:\Users\i325551\Documents\CampusID\Partiels\2-11-2017\Tests\BankTransfert\BankTranfertLibrary\.vs\BankTranfertLibrary\lut\0\b\BankTranfertLibrary\Debug\netcoreapp2.0\BankTranfertLibrary.dll
-C:\Users\i325551\Documents\CampusID\Partiels\2-11-2017\Tests\BankTransfert\BankTranfertLibrary\.vs\BankTranfertLibrary\lut\0\b\BankTranfertLibrary\Debug\netcoreapp2.0\BankTranfertLibrary.pdb
-C:\Users\i325551\Documents\CampusID\Partiels\2-11-2017\Tests\BankTransfert\BankTranfertLibrary\.vs\BankTranfertLibrary\lut\0\i\BankTranfertLibrary\Debug\netcoreapp2.0\BankTranfertLibrary.csproj.CoreCompileInputs.cache
-C:\Users\i325551\Documents\CampusID\Partiels\2-11-2017\Tests\BankTransfert\BankTranfertLibrary\.vs\BankTranfertLibrary\lut\0\i\BankTranfertLibrary\Debug\netcoreapp2.0\BankTranfertLibrary.AssemblyInfoInputs.cache
-C:\Users\i325551\Documents\CampusID\Partiels\2-11-2017\Tests\BankTransfert\BankTranfertLibrary\.vs\BankTranfertLibrary\lut\0\i\BankTranfertLibrary\Debug\netcoreapp2.0\BankTranfertLibrary.AssemblyInfo.cs
-C:\Users\i325551\Documents\CampusID\Partiels\2-11-2017\Tests\BankTransfert\BankTranfertLibrary\.vs\BankTranfertLibrary\lut\0\i\BankTranfertLibrary\Debug\netcoreapp2.0\BankTranfertLibrary.dll
-C:\Users\i325551\Documents\CampusID\Partiels\2-11-2017\Tests\BankTransfert\BankTranfertLibrary\.vs\BankTranfertLibrary\lut\0\i\BankTranfertLibrary\Debug\netcoreapp2.0\BankTranfertLibrary.pdb
