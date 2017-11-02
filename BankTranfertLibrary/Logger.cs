@@ -1,6 +1,7 @@
 ﻿using BankTranfertLibrary.Interfaces;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Text;
 
 namespace BankTranfertLibrary
@@ -15,7 +16,7 @@ namespace BankTranfertLibrary
     {
         public void Log(Severity severity, string message)
         {
-            Console.WriteLine($"{severity.ToString()} - {message}");
+            File.AppendAllText("logs.txt", $"{severity.ToString()} - {message}");
         }
     }
 }
